@@ -1,25 +1,40 @@
-import logo from './logo.svg';
+import { Component } from 'react';
 import './App.css';
+import CustomerSearch from './CustomerSearch/CustomerSearchWidget.js';
 
-function App() {
+const PREPAID = 'Prepaid'
+const POSTPAID = 'Postpaid'
+
+class App extends Component {
+  originalCustomersList = 
+  [
+    {customerName: 'Ahmed',
+    customerMSISDN: '010',
+    lineType: PREPAID},
+
+    {customerName: 'Mohamed',
+    customerMSISDN: '010',
+    lineType: PREPAID},
+
+    {customerName: 'Sameh',
+    customerMSISDN: '012',
+    lineType: POSTPAID}
+
+    ];
+  
+
+  /**Render method */
+  render = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>Customer Search:</h1>
+
+      {/** Add Customer Search widget*/}
+      <CustomerSearch customersList={this.originalCustomersList}/> 
+
     </div>
-  );
+    );
+  }
 }
 
 export default App;
