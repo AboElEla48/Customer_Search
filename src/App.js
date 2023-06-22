@@ -9,15 +9,15 @@ class App extends Component {
   originalCustomersList = 
   [
     {customerName: 'Ahmed',
-    customerMSISDN: '010',
+    customerMSISDN: '01054115889',
     lineType: PREPAID},
 
     {customerName: 'Mohamed',
-    customerMSISDN: '010',
+    customerMSISDN: '01054117789',
     lineType: PREPAID},
 
     {customerName: 'Sameh',
-    customerMSISDN: '012',
+    customerMSISDN: '01254115549',
     lineType: POSTPAID}
 
     ];
