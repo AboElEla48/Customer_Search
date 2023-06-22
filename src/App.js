@@ -6,22 +6,31 @@ const PREPAID = 'Prepaid'
 const POSTPAID = 'Postpaid'
 
 class App extends Component {
-  originalCustomersList = 
+  originalCustomersList =
   [
-    {customerName: 'Ahmed',
-    customerMSISDN: '01054115889',
-    lineType: PREPAID},
+    {
+      id: 'edf12',
+      customerName: 'Ahmed',
+      customerMSISDN: '01054115889',
+      lineType: PREPAID
+    },
 
-    {customerName: 'Mohamed',
-    customerMSISDN: '01054117789',
-    lineType: PREPAID},
+    {
+      id: 'sxd17',
+      customerName: 'Mohamed',
+      customerMSISDN: '01054117789',
+      lineType: PREPAID
+    },
 
-    {customerName: 'Sameh',
-    customerMSISDN: '01254115549',
-    lineType: POSTPAID}
+    {
+      id: 'wqe32',
+      customerName: 'Sameh',
+      customerMSISDN: '01254115549',
+      lineType: POSTPAID
+    }
 
     ];
-  
+
 
   /**Render method */
   render = () => {
@@ -30,7 +39,7 @@ class App extends Component {
       <h1>Customer Search:</h1>
 
       {/** Add Customer Search widget*/}
-      <CustomerSearch customersList={this.originalCustomersList}/> 
+      <CustomerSearch customersList={this.originalCustomersList}/>
 
     </div>
     );

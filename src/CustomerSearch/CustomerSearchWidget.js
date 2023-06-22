@@ -11,14 +11,16 @@ class CustomerSearch extends Component{
 
     // Hold list into state
     state = {};
-    
+
 
     constructor(props){
         super(props);
-        
+
         //Get customers List
         this.customersList = props.customersList;
         this.logMSG('CustomerSearch Constructor', this.customersList);
+
+        this.state = {...this.customersList};
     }
 
     /** Log messages to console */
@@ -31,22 +33,20 @@ class CustomerSearch extends Component{
 
 
     /**Render component */
-    render =() => {
+    render() {
 
         this.logMSG('Render');
-
-        this.setState(this.customersList);
 
         return (
             <div>
                 <h2>MSISDN:</h2>
-                
-                
+
+
                 {/** Add input field for user to enter
                 * MSISDN
                 */}
                 <input
-                    className="TextInput" 
+                    className="TextInput"
                     type="number"
                     placeholder='Enter Customer MSISDN'/>
 
@@ -55,10 +55,11 @@ class CustomerSearch extends Component{
                     // Fill a list of customers items list from customers array
                     this.customersList.map(customer => {
                         return (
-                            <CustomerListItem 
-                                itemName= {customer.customerName}
-                                itemMSISDN= {customer.customerMSISDN}
-                                itemLineType= {customer.lineType}/>);
+                            <CustomerListItem
+                              key={customer.id}
+                              itemName= {customer.customerName}
+                              itemMSISDN= {customer.customerMSISDN}
+                              itemLineType= {customer.lineType}/>);
                     })
                 }
             </div>

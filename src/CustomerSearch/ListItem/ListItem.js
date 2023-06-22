@@ -5,30 +5,29 @@ const listItem = (props) => {
 
     return (
         <div className="CardStyle">
-        <table>
-          <td>
-            <tr>
-              <div className="CustomerName">
-                  {props.itemName}
-              </div>
-            </tr>
+          <table>
+            <td>
+              <tr>
+                <div className="CustomerName">
+                    {props.itemName}
+                </div>
+              </tr>
 
-            <tr>
-              <div className="CustomerData">
-                  {props.itemMSISDN}<br/>
-                  {props.itemLineType}
+              <tr>
+                <div className="CustomerData">
+                    {props.itemMSISDN}<br/>
+                    {props.itemLineType}
 
-              </div>
-            </tr>
+                </div>
+              </tr>
 
-          </td>
+            </td>
 
-          <td>
-            <img
-              className="CustomerDetailsArrow"/>
-          </td>
-        </table> 
-
+            <td>
+              <img
+                className="CustomerDetailsArrow"/>
+            </td>
+          </table> 
 
         </div>
     );
