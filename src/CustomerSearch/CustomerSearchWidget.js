@@ -31,9 +31,8 @@ class CustomerSearch extends Component{
         }
     }
 
-
     /**Render component */
-    render() {
+    render = () => {
 
         this.logMSG('Render');
 
@@ -47,7 +46,7 @@ class CustomerSearch extends Component{
                 */}
                 <input
                     className="TextInput"
-                    type="number"
+                    type="tel"
                     placeholder='Enter Customer MSISDN'/>
 
                 <h2>Customers</h2>

@@ -15,8 +15,7 @@ const listItem = (props) => {
                 </td>
 
                 <td rowSpan="3">
-                  <img
-                    className="CustomerDetailsArrow"/>
+                  <img className="CustomerDetailsArrow"/>
                 </td>
               </tr>
 
