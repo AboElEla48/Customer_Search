@@ -24,3 +24,9 @@
     font-size: 15px;
     color: grey;
 }
+
+.CustomerDetailsArrow {
+  width: 20px;
+  height: 20px;
+  align-items: center;
+}
