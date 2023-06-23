@@ -46,7 +46,7 @@ class CustomerSearch extends Component{
 
       //search for MSISDN in list of Customers
       if(this.customersList != null) {
-        let newCustomersList = new Array();
+        let newCustomersList = [];
         for(let i =0; i < this.customersList.length; i++) {
           let customer = this.customersList[i];
           if( customer.customerMSISDN.includes(msisdn) ) {
