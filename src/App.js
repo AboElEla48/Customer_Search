@@ -27,9 +27,31 @@ class App extends Component {
       customerName: 'Sameh',
       customerMSISDN: '01254115549',
       lineType: POSTPAID
+    },
+
+    {
+      id: 'lke52',
+      customerName: 'Arafat',
+      customerMSISDN: '01154173549',
+      lineType: POSTPAID
+    },
+
+    {
+      id: 'vfr28',
+      customerName: 'Walid',
+      customerMSISDN: '01534171249',
+      lineType: POSTPAID
+    },
+
+    {
+      id: 'mxt38',
+      customerName: 'Soaad',
+      customerMSISDN: '01518731244',
+      lineType: POSTPAID
     }
 
-    ];
+
+  ];
 
 
   /**Render method */
